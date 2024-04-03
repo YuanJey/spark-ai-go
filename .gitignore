@@ -1,3 +1,4 @@
 sparkai/llms/spark/internal/.env
 *.env
 .idea
+sparkai/llms/spark/llm_test.go
