@@ -1,4 +1,4 @@
-module github.com/iflytek/spark-ai-go
+module github.com/YuanJey/spark-ai-go
 
 go 1.21.6
 
