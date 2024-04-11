@@ -2,8 +2,8 @@ package callbacks
 
 import (
 	"context"
-	"github.com/YuanJey/spark-ai-go/sparkai/llms"
-	"github.com/YuanJey/spark-ai-go/sparkai/messages"
+	"github.com/iflytek/spark-ai-go/sparkai/llms"
+	"github.com/iflytek/spark-ai-go/sparkai/messages"
 )
 
 // Handler is the interface that allows for hooking into specific parts of an

@@ -3,9 +3,9 @@ package test
 import (
 	"context"
 	"fmt"
-	"github.com/iflytek/spark-ai-go/sparkai/llms/spark"
-	"github.com/iflytek/spark-ai-go/sparkai/llms/spark/client/sparkclient"
-	"github.com/iflytek/spark-ai-go/sparkai/messages"
+	"github.com/YuanJey/spark-ai-go/sparkai/llms/spark"
+	"github.com/YuanJey/spark-ai-go/sparkai/llms/spark/client/sparkclient"
+	"github.com/YuanJey/spark-ai-go/sparkai/messages"
 	"os"
 	"testing"
 
@@ -28,12 +28,17 @@ const (
 )
 
 func TestSpark(t *testing.T) {
-	SPARK_API_KEY := os.Getenv(ApiKeyEnvVarName)
-	SPARK_API_SECRET := os.Getenv(ApiSecretEnvVarName)
-	SPARK_API_BASE := os.Getenv(BaseURLEnvVarName)
-	SPARK_APP_ID := os.Getenv(AppIdEnvVarName)
-	SPARK_DOMAIN := "10245"
-	SPARK_DOMAIN = os.Getenv(SparkDomainEnvVarName)
+	//SPARK_API_KEY := os.Getenv(ApiKeyEnvVarName)
+	//SPARK_API_SECRET := os.Getenv(ApiSecretEnvVarName)
+	//SPARK_API_BASE := os.Getenv(BaseURLEnvVarName)
+	//SPARK_APP_ID := os.Getenv(AppIdEnvVarName)
+	//SPARK_DOMAIN := "10245"
+	//SPARK_DOMAIN = os.Getenv(SparkDomainEnvVarName)
+	SPARK_API_KEY := "b98d78785a93a097688491117f51cde1"
+	SPARK_API_SECRET := "NzIzOTIyYTlmMTdiZTBkNDY0NGFmMGEx"
+	SPARK_API_BASE := "wss://spark-api.xf-yun.com/v3.5/chat"
+	SPARK_APP_ID := "291cbddc"
+	SPARK_DOMAIN := "generalv3.5"
 	llm, err := spark.New(spark.WithAPIDomain(SPARK_DOMAIN),
 		spark.WithApiKey(SPARK_API_KEY),
 		spark.WithApiSecret(SPARK_API_SECRET),
@@ -42,7 +47,7 @@ func TestSpark(t *testing.T) {
 
 	ctx := context.Background()
 	ctx1 := context.WithValue(ctx, "user_agent", "ShellSpark")
-	g, err := llm.Generate(ctx1, []string{"帮我润色并简化这句话: 国内科技大厂，创业公司都在演进大模型AI Agent且AI Agent框架仍然处于发展初期，采用开源化的AIAgent演进路线有助于快速构建影响力\n", "帮我赞扬一下库里的表现"})
+	g, err := llm.Generate(ctx1, []string{"111"})
 
 	if err != nil {
 		fmt.Print(err.Error())
@@ -72,7 +77,7 @@ func TestLLMClientStream(t *testing.T) {
 		Messages: []messages.ChatMessage{
 			&messages.GenericChatMessage{
 				Role:    "user",
-				Content: "帮我润色并简化这句话: 国内科技大厂，创业公司都在演进大模型AI Agent且AI Agent框架仍然处于发展初期，采用开源化的AIAgent演进路线有助于快速构建影响力\n",
+				Content: "1+2",
 			},
 		},
 	}

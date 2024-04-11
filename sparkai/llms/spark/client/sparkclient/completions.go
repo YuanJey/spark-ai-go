@@ -2,7 +2,7 @@ package sparkclient
 
 import (
 	"context"
-	"github.com/iflytek/spark-ai-go/sparkai/messages"
+	"github.com/YuanJey/spark-ai-go/sparkai/messages"
 )
 
 // CompletionRequest is a request to complete a completion.

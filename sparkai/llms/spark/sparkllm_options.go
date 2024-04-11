@@ -1,8 +1,8 @@
 package spark
 
 import (
-	"github.com/iflytek/spark-ai-go/sparkai/callbacks"
-	"github.com/iflytek/spark-ai-go/sparkai/llms/spark/client/sparkclient"
+	"github.com/YuanJey/spark-ai-go/sparkai/callbacks"
+	"github.com/YuanJey/spark-ai-go/sparkai/llms/spark/client/sparkclient"
 )
 
 const (

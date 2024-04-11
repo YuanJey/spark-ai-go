@@ -2,7 +2,7 @@ package llms
 
 import (
 	"context"
-	"github.com/YuanJey/spark-ai-go/sparkai/messages"
+	"github.com/iflytek/spark-ai-go/sparkai/messages"
 )
 
 // CallOption is a function that configures a CallOptions.

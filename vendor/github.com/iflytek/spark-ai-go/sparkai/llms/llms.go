@@ -3,7 +3,7 @@ package llms
 import (
 	"context"
 	"errors"
-	"github.com/YuanJey/spark-ai-go/sparkai/messages"
+	"github.com/iflytek/spark-ai-go/sparkai/messages"
 )
 
 // LLM is a Large Language Model.

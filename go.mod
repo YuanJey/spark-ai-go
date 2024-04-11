@@ -1,9 +1,10 @@
-module github.com/iflytek/spark-ai-go
+module github.com/YuanJey/spark-ai-go
 
 go 1.21.6
 
 require (
 	github.com/gorilla/websocket v1.5.1
+	github.com/iflytek/spark-ai-go v0.0.0-20240403094231-d70de91c251b
 	github.com/joho/godotenv v1.5.1
 	github.com/pkoukk/tiktoken-go v0.1.6
 	github.com/spf13/cobra v1.8.0

@@ -7,7 +7,7 @@ import (
 	"encoding/base64"
 	"errors"
 	"fmt"
-	"github.com/iflytek/spark-ai-go/sparkai/messages"
+	"github.com/YuanJey/spark-ai-go/sparkai/messages"
 	"net/http"
 	"net/url"
 	"strings"
